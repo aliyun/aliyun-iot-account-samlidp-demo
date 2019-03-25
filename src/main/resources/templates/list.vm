@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8" />
+    <title>三方平台OC管理页面</title>
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+</head>
+<body>
+<div class="container">
+当前IDP登录用户:${user}
+<table class="table">
+    <tr>
+        <td>三方应用</td>
+        <td><a href="#">这个超链接填写三方应用的地址</a>
+        </td>
+    </tr>
+</table>
+<p>当你看到这个页面的时候,这个页面代表三方ISV的平台的页面,与IOT没有任何关系,显示的登录的用户名与IOT也没有任何关系,但是显示这个页面之前,iot的同样用户名的登录态也同时建立</p>
+<p>三方应用即是指的已经接入了IOT OAUTH2 授权的应用</p>
+<p>当建立IOT登录态之后,点三方应用之后,访问的是购买的三方应用的URL,
+    三方应用会先判断当前用户是否与三方应用建立登录态(由三方应用判断登录态是否存在,与阿里云IOT无关),
+    如果没有就去访问 阿里云账户中心 的OAUTH2授权页(这个demo登录态是不存在的,会去授权),
+    授权完成之后应用会回调三方应用的callback url带上AuthCode用于获取access_token,
+</p>
+
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<saml2p:AuthnRequest AssertionConsumerServiceURL="https://signin.aliyun.com/saml/SSO"
+                     Destination="https://account.iot.aliyun.test/saml/idp/sso" ForceAuthn="false"
+                     ID="a365e22ge4bjd07242cc08bee90fg9g" IsPassive="false" IssueInstant="2019-03-02T08:42:00.855Z"
+                     ProtocolBinding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Version="2.0"
+                     xmlns:saml2p="urn:oasis:names:tc:SAML:2.0:protocol">
+    <saml2:Issuer xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion">
+        https://signin.aliyun.com/1058379963140559/saml/SSO
+    </saml2:Issuer>
+    <ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+        <ds:SignedInfo>
+            <ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+            <ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+            <ds:Reference URI="#a365e22ge4bjd07242cc08bee90fg9g">
+                <ds:Transforms>
+                    <ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+                    <ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+                </ds:Transforms>
+                <ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+                <ds:DigestValue>bcii1QDIO3Vj+hGIO3XTppmCzXk=</ds:DigestValue>
+            </ds:Reference>
+        </ds:SignedInfo>
+        <ds:SignatureValue>
+            XssGy+KFEK5Wz8hBg8FQSF24W/HfcnEPGFgJFij5OwAI88ZBuJ2bVGZVnQIJLRN8MY+4Qm9NpvgX6Ous7mOvn3nHrC+1c9Od7WoCI4FUuP0MaNdL/kJ0lZyZHQ9n4fhri8mh9xP7iSOCKk/WY1HhzBd4JqKLvgERUYr2KHsHnMbxF+WdwySNIRHghLa5yldx1Lprlue/AYEx5H+mIK0xe1b4+l0Srdj0UPXD0jhrqtrYnVICK0s/eFApQdNuNOGW8lZCmhqTSX0EkEAYiZQXTeS71Ofh+NgOe4oLokOHsT6DYAdbYScm49fLbSeFP+s1KGf5CeVZ6JnYce4QWycqcA==
+        </ds:SignatureValue>
+        <ds:KeyInfo>
+            <ds:X509Data>
+                <ds:X509Certificate>MIIDUTCCAjmgAwIBAgIEIv2v9DANBgkqhkiG9w0BAQsFADBZMQswCQYDVQQGEwJDTjERMA8GA1UE
+                    BxMISGFuZ3pob3UxFDASBgNVBAoTC0FsaWJhYmEgSW5jMQ8wDQYDVQQLEwZBcHNhcmExEDAOBgNV
+                    BAMTB0FsaWJhYmEwHhcNMTcwMzE0MTc1OTE5WhcNMjcwMzEyMTc1OTE5WjBZMQswCQYDVQQGEwJD
+                    TjERMA8GA1UEBxMISGFuZ3pob3UxFDASBgNVBAoTC0FsaWJhYmEgSW5jMQ8wDQYDVQQLEwZBcHNh
+                    cmExEDAOBgNVBAMTB0FsaWJhYmEwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCqK2HR
+                    tf4smv9pCQtPenFE1w6lvxsHiv0J/knvpC1BU4iAWcS8LxAElKb49QbKHuUxcwEGJfm0+zZpqS+J
+                    I3jmGc4aHYACyL2WxtKNx/5EK1Qs5ugCipn7g+ySOqXxc/Rv2S7muw6LTrGVTT7vo09EUDkZM34s
+                    TupuU7tzX0ktYhimxwskG9o7bvZuQKQf66gN8l/DUzyUl59/0wA1+x5A5B3pvaABCA6dq4mi8mtJ
+                    fTXcqWm06+FgVNPgKo59uP6y08rQJXjKDwLIf0owuoiRrPLR5JKC1vQ6PSz0cGv8tGUts5dr/0zG
+                    FHy4h3aufQiXCSi44WUB3FejQQfgEiBdAgMBAAGjITAfMB0GA1UdDgQWBBShWN61nZsWz9MYnSrV
+                    kCkJnSdFtDANBgkqhkiG9w0BAQsFAAOCAQEAMMAl+C3oyI6kZNmvX05Sb0q6UAM8wqjFKbPhSSiy
+                    srjVZwjEjiZnOSnoX8vO07fsZpcVmByHzGXWuBxxKCviCpQCS9hyOTF6bvAoXwe37h02Uhv3tKI0
+                    7FRkXJA7HeB0HEuHPCBxxWVWJfgtkeUETnGV06CrUlGON7Du3h37EUzfTqmKhlsqKeK8uqw3gLYq
+                    Bp6ULrP1PbNo2AaHMYaZhFL1dSUtNYvekZppregZKMIDqtEm6Pwpw2lj8gjTC40PQ0GuXEeTsfE5
+                    dhw42xc9RkyUg1Go04k9Z/UMxTX0KVMiRZ9DF2FWjWp1AAQJ3TvZ2Ao/XOhmk4GWRehUoHr7Hw==
+                </ds:X509Certificate>
+            </ds:X509Data>
+        </ds:KeyInfo>
+    </ds:Signature>
+</saml2p:AuthnRequest>

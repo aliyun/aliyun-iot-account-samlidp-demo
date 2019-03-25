@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>登录</title>
+</head>
+<body>
+欢迎登陆${msg}
+<form action = "login" method="post" >
+    <input value="username" name="username" />
+    <input value="password" name="password" />
+    <input type="submit" value="登录" />
+</form>
+<p>这个用于模拟外部用户的登录页.是外部用户的体系,密码及验证将由外部客户的平台完成</p>
+</body>
+</html>
